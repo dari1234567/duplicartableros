@@ -1,0 +1,514 @@
+query = 
+query leerColumnas{
+  items(ids: 1886380389){
+    name
+    column_values{
+      column{
+        title
+        id
+        type
+            }
+      value
+      ... on TextValue{
+        text
+            }
+      ... on DateValue{
+         date
+            }
+      ... on StatusValue{
+        label
+            }
+      ... on PeopleValue{
+        persons_and_teams{
+          id
+          kind
+                }
+...
+            ]
+        },
+        "account_id": 26434187
+    }
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+Item: {'name': 'Barrer', 'column_values': [
+            {'column': {'title': 'Text', 'id': 'text_mkpntj7x', 'type': 'text'
+                }, 'value': '"listo"', 'text': 'listo'
+            },
+            {'column': {'title': 'Date', 'id': 'date_mkppxh1b', 'type': 'date'
+                }, 'value': '{
+                    "date": "2025-04-09",
+                    "changed_at": "2025-04-04T10:31:45.222Z"
+                }', 'date': '2025-04-09'
+            },
+            {'column': {'title': 'Status', 'id': 'color_mkpw1vr9', 'type': 'status'
+                }, 'value': '{
+                    "index": 2,
+                    "post_id": null,
+                    "changed_at": "2025-04-25T06:09:35.981Z"
+                }', 'label': 'Stuck'
+            },
+            {'column': {'title': 'People', 'id': 'multiple_person_mkq7c26d', 'type': 'people'
+                }, 'value': '{
+                    "changed_at": "2025-04-21T12:22:24.545Z",
+                    "personsAndTeams": [
+                        {
+                            "id": 72162409,
+                            "kind": "person"
+                        },
+                        {
+                            "id": 72162428,
+                            "kind": "person"
+                        }
+                    ]
+                }', 'persons_and_teams': [
+                    {'id': '72162409', 'kind': 'person'
+                    },
+                    {'id': '72162428', 'kind': 'person'
+                    }
+                ]
+            },
+            {'column': {'title': 'Dropdown', 'id': 'dropdown_mkq7jk7v', 'type': 'dropdown'
+                }, 'value': '{
+                    "ids": [
+                        1,
+                        2,
+                        3,
+                        4
+                    ]
+                }', 'text': 'RRHH, Contabilidad, Marketing, Almacen', 'values': [
+                    {'label': 'RRHH', 'id': '1'
+                    },
+                    {'label': 'Contabilidad', 'id': '2'
+                    },
+                    {'label': 'Marketing', 'id': '3'
+                    },
+                    {'label': 'Almacen', 'id': '4'
+                    }
+                ]
+            },
+            {'column': {'title': 'Timeline', 'id': 'timerange_mkq7jnr3', 'type': 'timeline'
+                }, 'value': '{
+                    "to": "2025-05-13",
+                    "from": "2025-04-01",
+                    "changed_at": "2025-04-21T12:15:29.784Z"
+                }', 'from': '2025-04-01T00: 00: 00+00: 00', 'to': '2025-05-13T00: 00: 00+00: 00'
+            },
+            {'column': {'title': 'Link', 'id': 'link_mkq76xxs', 'type': 'link'
+                }, 'value': '{
+                    "url": "https://www.google.com/?hl=es",
+                    "text": "Google",
+                    "changed_at": "2025-04-21T14:57:46.374Z"
+                }', 'url': 'https: //www.google.com/?hl=es', 'url_text': 'Google'}, {'column': {'title': 'Numbers', 'id': 'numeric_mkqqaxdp', 'type': 'numbers'}, 'value': '"5345"', 'id': 'numeric_mkqqaxdp', 'number': 5345, 'text': '5345'}, {'column': {'title': 'Files', 'id': 'file_mkqq47p5', 'type': 'file'}, 'value': '{"files":[{"name":"material_ZCAP.xlsx","assetId":118164329,"isImage":"false","fileType":"ASSET","createdAt":1746696321007,"createdBy":"74015634"}]}', 'id': 'file_mkqq47p5'}, {'column': {'title': 'Formula', 'id': 'formula_mkqqaw2w', 'type': 'formula'}, 'value': None, 'id': 'formula_mkqqaw2w'}, {'column': {'title': 'Connect boards', 'id': 'board_relation_mkqq4f0g', 'type': 'board_relation'}, 'value': None}, {'column': {'title': 'Priority', 'id': 'color_mkqq7x4h', 'type': 'status'}, 'value': '{"index":4,"post_id":null,"changed_at":"2025-05-07T15:40:10.680Z"}', 'label': 'High'}, {'column': {'title': 'monday Doc', 'id': 'doc_mkqqs1r6', 'type': 'doc'}, 'value': None, 'file': None}, {'column': {'title': 'Label', 'id': 'color_mkqq392d', 'type': 'status'}, 'value': '{"index":0,"post_id":null,"changed_at":"2025-05-07T15:40:39.727Z"}', 'label': 'Label 1'}, {'column': {'title': 'Button', 'id': 'button_mkqqbzyh', 'type': 'button'}, 'value': None, 'color': '#579bfc', 'label': 'Click me'}, {'column': {'title': 'Check', 'id': 'boolean_mkqq9zdf', 'type': 'checkbox'}, 'value': '{"checked":true,"changed_at":"2025-05-07T15:41:54.729Z"}', 'checked': True}, {'column': {'title': 'Phone', 'id': 'phone_mkqqe0v9', 'type': 'phone'}, 'value': '{"phone":"628234324","changed_at":"2025-05-08T10:02:56.171Z","countryShortName":"ES"}', 'id': 'phone_mkqqe0v9', 'country_short_name': 'ES', 'phone': '628234324'}, {'column': {'title': 'World clock', 'id': 'timezone_mkqqp8hz', 'type': 'world_clock'}, 'value': '{"timezone":"US/Samoa","changed_at":"2025-05-07T15:42:38.577Z"}', 'text': 'US/Samoa', 'timezone': 'US/Samoa'}, {'column': {'title': 'Location', 'id': 'location_mkqqg7cy', 'type': 'location'}, 'value': '{"lat":"29.9772962","lng":"31.1324955","city":{"long_name":"Al Haram","short_name":"Al Haram"},"street":{"long_name":"Al Haram","short_name":"Al Haram"},"address":"Giza Pyramid Complex","country":{"long_name":"Egipto","short_name":"EG"},"placeId":"ChIJzbs54n1PWBQRizZuWjV0dMo","changed_at":"2025-05-07T15:43:50.611Z","streetNumber":null}', 'address': 'Giza Pyramid Complex', 'lat': 29.9772962, 'lng': 31.1324955}, {'column': {'title': 'Vote', 'id': 'votes_mkqqpw6q', 'type': 'vote'}, 'value': '{"votersIds":[74015634],"changed_at":"2025-05-07T15:44:43.383Z"}', 'vote_count': 1, 'voter_ids': ['74015634']}, {'column': {'title': 'Color picker', 'id': 'color_picker_mkqqhynr', 'type': 'color_picker'}, 'value': '{"color":{"hex":"#90e2d9","hsl":{"a":1,"h":173.33333333333331,"l":0.7255099199999999,"s":0.5817699495734053},"hsv":{"a":1,"h":173.33333333333331,"s":0.3608,"v":0.8852},"rgb":{"a":1,"b":217,"g":226,"r":144},"oldHue":173.33333333333331,"source":"hsv"},"changed_at":"2025-05-07T15:45:19.525Z"}', 'color': '#90e2d9', 'updated_at': '2025-05-07T15:45:19+00:00'}, {'column': {'title': 'Country', 'id': 'country_mkqq5jsj', 'type': 'country'}, 'value': '{"changed_at":"2025-05-07T15:46:57.971Z","countryCode":"AL","countryName":"Albania"}', 'country': {'name': 'Albania', 'code': 'AL'}}, {'column': {'title': 'Dependency', 'id': 'dependency_mkqqezkt', 'type': 'dependency'}, 'value': '{"changed_at":"2025-05-08T14:27:56.781Z","linkedPulseIds":[{"linkedPulseId":1886374213},{"linkedPulseId":1886374243},{"linkedPulseId":1886374143},{"linkedPulseId":1890607187}]}', 'linked_item_ids': ['1886374213', '1886374243', '1886374143', '1890607187']}, {'column': {'title': 'Email', 'id': 'email_mkqq3smm', 'type': 'email'}, 'value': '{"text":"mi correo","email":"bivanov@cartagon.com","changed_at":"2025-05-07T15:50:41.046Z"}', 'email': 'bivanov@cartagon.com', 'text': 'mi correo - bivanov@cartagon.com'}, {'column': {'title': 'Hour', 'id': 'hour_mkqqq64t', 'type': 'hour'}, 'value': '{"hour":12,"minute":54,"changed_at":"2025-05-08T10:24:46.322Z"}', 'minute': 54, 'hour': 12}, {'column': {'title': 'Item ID', 'id': 'pulse_id_mkqqrj5v', 'type': 'item_id'}, 'value': '{"item_id":"1886380389"}', 'text': '1886380389'}, {'column': {'title': 'Last updated', 'id': 'pulse_updated_mkqq5fza', 'type': 'last_updated'}, 'value': '{"updated_at":"2025-05-08T14:27:58Z","updater_id":"74015634"}', 'updated_at': '2025-05-08T14:27:58Z'}, {'column': {'title': 'Rating', 'id': 'rating_mkqqbef0', 'type': 'rating'}, 'value': '{"rating":3,"changed_at":"2025-05-07T15:53:01.343Z"}', 'rating': 3}, {'column': {'title': 'Tags', 'id': 'tag_mkqqt1x', 'type': 'tags'}, 'value': '{"tag_ids":[5143872]}', 'tag_ids': [5143872], 'text': 'Decks'}, {'column': {'title': 'Time tracking', 'id': 'duration_mkqq1vps', 'type': 'time_tracking'}, 'value': '{"running":"false","duration":43,"startDate":1746633236,"changed_at":"2025-05-07T15:54:39.945Z"}', 'running': False, 'history': [{'created_at': '2025-05-07T15:53:56+00:00', 'started_at': '2025-05-07T15:53:56+00:00', 'ended_at': '2025-05-07T15:54:39+00:00'}]}, {'column': {'title': 'Base', 'id': 'board_relation_mkqr9hga', 'type': 'board_relation'}, 'value': '{"changed_at":"2025-05-08T09:00:47.325Z","linkedPulseIds":[{"linkedPulseId":1899490222}]}'}, {'column': {'title': 'Mirror', 'id': 'lookup_mkqrahx4', 'type': 'mirror'}, 'value': None, 'display_value': 'iunh8o7y,j,bkj', 'id': 'lookup_mkqrahx4'}, {'column': {'title': 'Long text', 'id': 'long_text_mkqrn7xc', 'type': 'long_text'}, 'value': '{"text":"En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.","changed_at":"2025-05-08T10:31:56.536Z"}'}]}
+column_values: [
+                    {'column': {'title': 'Text', 'id': 'text_mkpntj7x', 'type': 'text'
+                        }, 'value': '"listo"', 'text': 'listo'
+                    },
+                    {'column': {'title': 'Date', 'id': 'date_mkppxh1b', 'type': 'date'
+                        }, 'value': '{
+                            "date": "2025-04-09",
+                            "changed_at": "2025-04-04T10:31:45.222Z"
+                        }', 'date': '2025-04-09'
+                    },
+                    {'column': {'title': 'Status', 'id': 'color_mkpw1vr9', 'type': 'status'
+                        }, 'value': '{
+                            "index": 2,
+                            "post_id": null,
+                            "changed_at": "2025-04-25T06:09:35.981Z"
+                        }', 'label': 'Stuck'
+                    },
+                    {'column': {'title': 'People', 'id': 'multiple_person_mkq7c26d', 'type': 'people'
+                        }, 'value': '{
+                            "changed_at": "2025-04-21T12:22:24.545Z",
+                            "personsAndTeams": [
+                                {
+                                    "id": 72162409,
+                                    "kind": "person"
+                                },
+                                {
+                                    "id": 72162428,
+                                    "kind": "person"
+                                }
+                            ]
+                        }', 'persons_and_teams': [
+                            {'id': '72162409', 'kind': 'person'
+                            },
+                            {'id': '72162428', 'kind': 'person'
+                            }
+                        ]
+                    },
+                    {'column': {'title': 'Dropdown', 'id': 'dropdown_mkq7jk7v', 'type': 'dropdown'
+                        }, 'value': '{
+                            "ids": [
+                                1,
+                                2,
+                                3,
+                                4
+                            ]
+                        }', 'text': 'RRHH, Contabilidad, Marketing, Almacen', 'values': [
+                            {'label': 'RRHH', 'id': '1'
+                            },
+                            {'label': 'Contabilidad', 'id': '2'
+                            },
+                            {'label': 'Marketing', 'id': '3'
+                            },
+                            {'label': 'Almacen', 'id': '4'
+                            }
+                        ]
+                    },
+                    {'column': {'title': 'Timeline', 'id': 'timerange_mkq7jnr3', 'type': 'timeline'
+                        }, 'value': '{
+                            "to": "2025-05-13",
+                            "from": "2025-04-01",
+                            "changed_at": "2025-04-21T12:15:29.784Z"
+                        }', 'from': '2025-04-01T00: 00: 00+00: 00', 'to': '2025-05-13T00: 00: 00+00: 00'
+                    },
+                    {'column': {'title': 'Link', 'id': 'link_mkq76xxs', 'type': 'link'
+                        }, 'value': '{
+                            "url": "https://www.google.com/?hl=es",
+                            "text": "Google",
+                            "changed_at": "2025-04-21T14:57:46.374Z"
+                        }', 'url': 'https: //www.google.com/?hl=es', 'url_text': 'Google'}, {'column': {'title': 'Numbers', 'id': 'numeric_mkqqaxdp', 'type': 'numbers'}, 'value': '"5345"', 'id': 'numeric_mkqqaxdp', 'number': 5345, 'text': '5345'}, {'column': {'title': 'Files', 'id': 'file_mkqq47p5', 'type': 'file'}, 'value': '{"files":[{"name":"material_ZCAP.xlsx","assetId":118164329,"isImage":"false","fileType":"ASSET","createdAt":1746696321007,"createdBy":"74015634"}]}', 'id': 'file_mkqq47p5'}, {'column': {'title': 'Formula', 'id': 'formula_mkqqaw2w', 'type': 'formula'}, 'value': None, 'id': 'formula_mkqqaw2w'}, {'column': {'title': 'Connect boards', 'id': 'board_relation_mkqq4f0g', 'type': 'board_relation'}, 'value': None}, {'column': {'title': 'Priority', 'id': 'color_mkqq7x4h', 'type': 'status'}, 'value': '{"index":4,"post_id":null,"changed_at":"2025-05-07T15:40:10.680Z"}', 'label': 'High'}, {'column': {'title': 'monday Doc', 'id': 'doc_mkqqs1r6', 'type': 'doc'}, 'value': None, 'file': None}, {'column': {'title': 'Label', 'id': 'color_mkqq392d', 'type': 'status'}, 'value': '{"index":0,"post_id":null,"changed_at":"2025-05-07T15:40:39.727Z"}', 'label': 'Label 1'}, {'column': {'title': 'Button', 'id': 'button_mkqqbzyh', 'type': 'button'}, 'value': None, 'color': '#579bfc', 'label': 'Click me'}, {'column': {'title': 'Check', 'id': 'boolean_mkqq9zdf', 'type': 'checkbox'}, 'value': '{"checked":true,"changed_at":"2025-05-07T15:41:54.729Z"}', 'checked': True}, {'column': {'title': 'Phone', 'id': 'phone_mkqqe0v9', 'type': 'phone'}, 'value': '{"phone":"628234324","changed_at":"2025-05-08T10:02:56.171Z","countryShortName":"ES"}', 'id': 'phone_mkqqe0v9', 'country_short_name': 'ES', 'phone': '628234324'}, {'column': {'title': 'World clock', 'id': 'timezone_mkqqp8hz', 'type': 'world_clock'}, 'value': '{"timezone":"US/Samoa","changed_at":"2025-05-07T15:42:38.577Z"}', 'text': 'US/Samoa', 'timezone': 'US/Samoa'}, {'column': {'title': 'Location', 'id': 'location_mkqqg7cy', 'type': 'location'}, 'value': '{"lat":"29.9772962","lng":"31.1324955","city":{"long_name":"Al Haram","short_name":"Al Haram"},"street":{"long_name":"Al Haram","short_name":"Al Haram"},"address":"Giza Pyramid Complex","country":{"long_name":"Egipto","short_name":"EG"},"placeId":"ChIJzbs54n1PWBQRizZuWjV0dMo","changed_at":"2025-05-07T15:43:50.611Z","streetNumber":null}', 'address': 'Giza Pyramid Complex', 'lat': 29.9772962, 'lng': 31.1324955}, {'column': {'title': 'Vote', 'id': 'votes_mkqqpw6q', 'type': 'vote'}, 'value': '{"votersIds":[74015634],"changed_at":"2025-05-07T15:44:43.383Z"}', 'vote_count': 1, 'voter_ids': ['74015634']}, {'column': {'title': 'Color picker', 'id': 'color_picker_mkqqhynr', 'type': 'color_picker'}, 'value': '{"color":{"hex":"#90e2d9","hsl":{"a":1,"h":173.33333333333331,"l":0.7255099199999999,"s":0.5817699495734053},"hsv":{"a":1,"h":173.33333333333331,"s":0.3608,"v":0.8852},"rgb":{"a":1,"b":217,"g":226,"r":144},"oldHue":173.33333333333331,"source":"hsv"},"changed_at":"2025-05-07T15:45:19.525Z"}', 'color': '#90e2d9', 'updated_at': '2025-05-07T15:45:19+00:00'}, {'column': {'title': 'Country', 'id': 'country_mkqq5jsj', 'type': 'country'}, 'value': '{"changed_at":"2025-05-07T15:46:57.971Z","countryCode":"AL","countryName":"Albania"}', 'country': {'name': 'Albania', 'code': 'AL'}}, {'column': {'title': 'Dependency', 'id': 'dependency_mkqqezkt', 'type': 'dependency'}, 'value': '{"changed_at":"2025-05-08T14:27:56.781Z","linkedPulseIds":[{"linkedPulseId":1886374213},{"linkedPulseId":1886374243},{"linkedPulseId":1886374143},{"linkedPulseId":1890607187}]}', 'linked_item_ids': ['1886374213', '1886374243', '1886374143', '1890607187']}, {'column': {'title': 'Email', 'id': 'email_mkqq3smm', 'type': 'email'}, 'value': '{"text":"mi correo","email":"bivanov@cartagon.com","changed_at":"2025-05-07T15:50:41.046Z"}', 'email': 'bivanov@cartagon.com', 'text': 'mi correo - bivanov@cartagon.com'}, {'column': {'title': 'Hour', 'id': 'hour_mkqqq64t', 'type': 'hour'}, 'value': '{"hour":12,"minute":54,"changed_at":"2025-05-08T10:24:46.322Z"}', 'minute': 54, 'hour': 12}, {'column': {'title': 'Item ID', 'id': 'pulse_id_mkqqrj5v', 'type': 'item_id'}, 'value': '{"item_id":"1886380389"}', 'text': '1886380389'}, {'column': {'title': 'Last updated', 'id': 'pulse_updated_mkqq5fza', 'type': 'last_updated'}, 'value': '{"updated_at":"2025-05-08T14:27:58Z","updater_id":"74015634"}', 'updated_at': '2025-05-08T14:27:58Z'}, {'column': {'title': 'Rating', 'id': 'rating_mkqqbef0', 'type': 'rating'}, 'value': '{"rating":3,"changed_at":"2025-05-07T15:53:01.343Z"}', 'rating': 3}, {'column': {'title': 'Tags', 'id': 'tag_mkqqt1x', 'type': 'tags'}, 'value': '{"tag_ids":[5143872]}', 'tag_ids': [5143872], 'text': 'Decks'}, {'column': {'title': 'Time tracking', 'id': 'duration_mkqq1vps', 'type': 'time_tracking'}, 'value': '{"running":"false","duration":43,"startDate":1746633236,"changed_at":"2025-05-07T15:54:39.945Z"}', 'running': False, 'history': [{'created_at': '2025-05-07T15:53:56+00:00', 'started_at': '2025-05-07T15:53:56+00:00', 'ended_at': '2025-05-07T15:54:39+00:00'}]}, {'column': {'title': 'Base', 'id': 'board_relation_mkqr9hga', 'type': 'board_relation'}, 'value': '{"changed_at":"2025-05-08T09:00:47.325Z","linkedPulseIds":[{"linkedPulseId":1899490222}]}'}, {'column': {'title': 'Mirror', 'id': 'lookup_mkqrahx4', 'type': 'mirror'}, 'value': None, 'display_value': 'iunh8o7y,j,bkj', 'id': 'lookup_mkqrahx4'}, {'column': {'title': 'Long text', 'id': 'long_text_mkqrn7xc', 'type': 'long_text'}, 'value': '{"text":"En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.","changed_at":"2025-05-08T10:31:56.536Z"}'}]
+original_column_values: [
+                            {'tipo': 'text', 'value': 'listo'
+                            },
+                            {'tipo': 'date', 'value': '2025-04-09'
+                            },
+                            {'tipo': 'status', 'value': 'Stuck'
+                            },
+                            {'tipo': 'people', 'value': [
+                                    {'id': '72162409', 'kind': 'person'
+                                    },
+                                    {'id': '72162428', 'kind': 'person'
+                                    }
+                                ]
+                            },
+                            {'tipo': 'dropdown', 'value': [
+                                    {'label': 'RRHH', 'id': '1'
+                                    },
+                                    {'label': 'Contabilidad', 'id': '2'
+                                    },
+                                    {'label': 'Marketing', 'id': '3'
+                                    },
+                                    {'label': 'Almacen', 'id': '4'
+                                    }
+                                ]
+                            },
+                            {'tipo': 'timeline', 'value': {'from': '2025-04-01', 'to': '2025-05-13'
+                                }
+                            },
+                            {'tipo': 'link', 'value': {'url': 'https: //www.google.com/?hl=es', 'text': 'Google'}}, {'tipo': 'numbers', 'value': 5345}, {'tipo': 'file', 'value': None}, {'tipo': 'formula', 'value': None}, {'tipo': 'board_relation', 'value': None}, {'tipo': 'status', 'value': 'High'}, {'tipo': 'doc', 'value': None}, {'tipo': 'status', 'value': 'Label 1'}, {'tipo': 'button', 'value': None}, {'tipo': 'checkbox', 'value': {'checked': True}}, {'tipo': 'phone', 'value': {'phone': '+628234324', 'countryShortName': 'ES'}}, {'tipo': 'world_clock', 'value': None}, {'tipo': 'location', 'value': {'lat': 29.9772962, 'lng': 31.1324955, 'address': 'Giza Pyramid Complex'}}, {'tipo': 'vote', 'value': None}, {'tipo': 'color_picker', 'value': None}, {'tipo': 'country', 'value': {'name': 'Albania', 'code': 'AL'}}, {'tipo': 'dependency', 'value': {'linked_item_ids': [['1886374213', '1886374243', '1886374143', '1890607187']]}}, {'tipo': 'email', 'value': {'email': 'bivanov@cartagon.com', 'text': 'mi correo - bivanov@cartagon.com'}}, {'tipo': 'hour', 'value': {'hour': 12, 'minute': 54}}, {'tipo': 'item_id', 'value': None}, {'tipo': 'last_updated', 'value': None}, {'tipo': 'rating', 'value': {'rating': 3}}, {'tipo': 'tags', 'value': {'tag_ids': [5143872]}}, {'tipo': 'time_tracking', 'value': None}, {'tipo': 'board_relation', 'value': None}, {'tipo': 'mirror', 'value': None}, {'tipo': 'long_text', 'value': None}]
+valor: {'tipo': 'text', 'value': 'listo'
+                                    }
+valor: {'tipo': 'date', 'value': '2025-04-09'
+                                    }
+valor: {'tipo': 'status', 'value': 'Stuck'
+                                    }
+valor: {'tipo': 'people', 'value': [
+                                            {'id': '72162409', 'kind': 'person'
+                                            },
+                                            {'id': '72162428', 'kind': 'person'
+                                            }
+                                        ]
+                                    }
+valor: {'tipo': 'dropdown', 'value': [
+                                            {'label': 'RRHH', 'id': '1'
+                                            },
+                                            {'label': 'Contabilidad', 'id': '2'
+                                            },
+                                            {'label': 'Marketing', 'id': '3'
+                                            },
+                                            {'label': 'Almacen', 'id': '4'
+                                            }
+                                        ]
+                                    }
+valor: {'tipo': 'timeline', 'value': {'from': '2025-04-01', 'to': '2025-05-13'
+                                        }
+                                    }
+valor: {'tipo': 'link', 'value': {'url': 'https: //www.google.com/?hl=es', 'text': 'Google'}}
+valor: {'tipo': 'numbers', 'value': 5345
+                                            }
+valor: {'tipo': 'file', 'value': None
+                                            }
+valor: {'tipo': 'formula', 'value': None
+                                            }
+valor: {'tipo': 'board_relation', 'value': None
+                                            }
+valor: {'tipo': 'status', 'value': 'High'
+                                            }
+valor: {'tipo': 'doc', 'value': None
+                                            }
+valor: {'tipo': 'status', 'value': 'Label 1'
+                                            }
+valor: {'tipo': 'button', 'value': None
+                                            }
+valor: {'tipo': 'checkbox', 'value': {'checked': True
+                                                }
+                                            }
+valor: {'tipo': 'phone', 'value': {'phone': '+628234324', 'countryShortName': 'ES'
+                                                }
+                                            }
+valor: {'tipo': 'world_clock', 'value': None
+                                            }
+valor: {'tipo': 'location', 'value': {'lat': 29.9772962, 'lng': 31.1324955, 'address': 'Giza Pyramid Complex'
+                                                }
+                                            }
+valor: {'tipo': 'vote', 'value': None
+                                            }
+valor: {'tipo': 'color_picker', 'value': None
+                                            }
+valor: {'tipo': 'country', 'value': {'name': 'Albania', 'code': 'AL'
+                                                }
+                                            }
+valor: {'tipo': 'dependency', 'value': {'linked_item_ids': [
+                                                        ['1886374213', '1886374243'
+                                                        ]
+                                                    ]
+                                                }
+                                            }
+valor: {'tipo': 'email', 'value': {'email': 'bivanov@cartagon.com', 'text': 'mi correo - bivanov@cartagon.com'
+                                                }
+                                            }
+valor: {'tipo': 'hour', 'value': {'hour': 12, 'minute': 54
+                                                }
+                                            }
+valor: {'tipo': 'item_id', 'value': None
+                                            }
+valor: {'tipo': 'last_updated', 'value': None
+                                            }
+valor: {'tipo': 'rating', 'value': {'rating': 3
+                                                }
+                                            }
+valor: {'tipo': 'tags', 'value': {'tag_ids': [
+                                                        5143872
+                                                    ]
+                                                }
+                                            }
+valor: {'tipo': 'time_tracking', 'value': None
+                                            }
+valor: {'tipo': 'board_relation', 'value': None
+                                            }
+valor: {'tipo': 'mirror', 'value': None
+                                            }
+valor: {'tipo': 'long_text', 'value': None
+                                            }
+query = 
+query {
+  boards(ids: 1893112234) {
+    columns {
+      id
+      title
+      type
+                                                    }
+                                                }
+                                            }
+
+r = {
+                                                "data": {
+                                                    "boards": [
+                                                        {
+                                                            "columns": [
+                                                                {
+                                                                    "id": "name",
+                                                                    "title": "Name",
+                                                                    "type": "name"
+                                                                },
+                                                                {
+                                                                    "id": "text_mkqsasbc",
+                                                                    "title": "Text",
+                                                                    "type": "text"
+                                                                },
+                                                                {
+                                                                    "id": "date_mkqsgfev",
+                                                                    "title": "Date",
+                                                                    "type": "date"
+                                                                },
+                                                                {
+                                                                    "id": "color_mkqsdkes",
+                                                                    "title": "Status",
+                                                                    "type": "status"
+                                                                },
+                                                                {
+                                                                    "id": " ",
+                                                                    "title": "People",
+                                                                    "type": "people"
+                                                                },
+                                                                {
+                                                                    "id": "dropdown_mkqsvf6c",
+                                                                    "title": "Dropdown",
+                                                                    "type": "dropdown"
+                                                                },
+                                                                {
+                                                                    "id": "timerange_mkqs5ceh",
+                                                                    "title": "Timeline",
+                                                                    "type": "timeline"
+                                                                },
+                                                                {
+                                                                    "id": "link_mkqs7v39",
+                                                                    "title": "Link",
+                                                                    "type": "link"
+                                                                },
+                                                                {
+                                                                    "id": "numeric_mkqsb7nc",
+                                                                    "title": "Numbers",
+                                                                    "type": "numbers"
+                                                                },
+                                                                {
+                                                                    "id": "file_mkqs4z1g",
+                                                                    "title": "Files",
+                                                                    "type": "file"
+                                                                },
+                                                                {
+                                                                    "id": "formula_mkqsm8s6",
+                                                                    "title": "Formula",
+                                                                    "type": "formula"
+                                                                },
+                                                                {
+                                                                    "id": "board_relation_mkqsyg2h",
+                                                                    "title": "Connect boards",
+                                                                    "type": "board_relation"
+                                                                },
+                                                                {
+                                                                    "id": "color_mkqs82gk",
+                                                                    "title": "Priority",
+                                                                    "type": "status"
+                                                                },
+                                                                {
+                                                                    "id": "doc_mkqsq1c3",
+                                                                    "title": "monday Doc",
+                                                                    "type": "doc"
+                                                                },
+                                                                {
+                                                                    "id": "color_mkqs273p",
+                                                                    "title": "Label",
+                                                                    "type": "status"
+                                                                },
+                                                                {
+                                                                    "id": "button_mkqsgn5t",
+                                                                    "title": "Button",
+                                                                    "type": "button"
+                                                                },
+                                                                {
+                                                                    "id": "boolean_mkqs6nk7",
+                                                                    "title": "Checkbox",
+                                                                    "type": "checkbox"
+                                                                },
+                                                                {
+                                                                    "id": "phone_mkqsakt0",
+                                                                    "title": "Phone",
+                                                                    "type": "phone"
+                                                                },
+                                                                {
+                                                                    "id": "timezone_mkqsy3az",
+                                                                    "title": "World clock",
+                                                                    "type": "world_clock"
+                                                                },
+                                                                {
+                                                                    "id": "location_mkqsjv0d",
+                                                                    "title": "Location",
+                                                                    "type": "location"
+                                                                },
+                                                                {
+                                                                    "id": "votes_mkqsejp0",
+                                                                    "title": "Vote",
+                                                                    "type": "vote"
+                                                                },
+                                                                {
+                                                                    "id": "color_picker_mkqs5j75",
+                                                                    "title": "Color picker",
+                                                                    "type": "color_picker"
+                                                                },
+                                                                {
+                                                                    "id": "country_mkqsfzkc",
+                                                                    "title": "Country",
+                                                                    "type": "country"
+                                                                },
+                                                                {
+                                                                    "id": "dependency_mkqsnqps",
+                                                                    "title": "Dependency",
+                                                                    "type": "dependency"
+                                                                },
+                                                                {
+                                                                    "id": "email_mkqstxh",
+                                                                    "title": "Email",
+                                                                    "type": "email"
+                                                                },
+                                                                {
+                                                                    "id": "hour_mkqsf9j7",
+                                                                    "title": "Hour",
+                                                                    "type": "hour"
+                                                                },
+                                                                {
+                                                                    "id": "pulse_id_mkqse95d",
+                                                                    "title": "Item ID",
+                                                                    "type": "item_id"
+                                                                },
+                                                                {
+                                                                    "id": "pulse_updated_mkqs9pat",
+                                                                    "title": "Last updated",
+                                                                    "type": "last_updated"
+                                                                },
+                                                                {
+                                                                    "id": "rating_mkqsqz1e",
+                                                                    "title": "Rating",
+                                                                    "type": "rating"
+                                                                },
+                                                                {
+                                                                    "id": "tag_mkqsvxf6",
+                                                                    "title": "Tags",
+                                                                    "type": "tags"
+                                                                },
+                                                                {
+                                                                    "id": "duration_mkqs66zj",
+                                                                    "title": "Time tracking",
+                                                                    "type": "time_tracking"
+                                                                },
+                                                                {
+                                                                    "id": "board_relation_mkqs30y8",
+                                                                    "title": "Connect boards 1",
+                                                                    "type": "board_relation"
+                                                                },
+                                                                {
+                                                                    "id": "lookup_mkqsd5nf",
+                                                                    "title": "Mirror",
+                                                                    "type": "mirror"
+                                                                },
+                                                                {
+                                                                    "id": "long_text_mkqsx2h1",
+                                                                    "title": "Long text",
+                                                                    "type": "long_text"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                "account_id": 26434187
+                                            }
+
+                                            original_column_values: [
+                                                {'tipo': 'text', 'value': 'listo', 'id': 'text_mkpntj7x', 'title': 'Textito'
+                                                },
+                                                {'tipo': 'date', 'value': '2025-04-09', 'id': 'date_mkppxh1b', 'title': 'Date'
+                                                },
+                                                {'tipo': 'status', 'value': 'Stuck', 'id': 'color_mkpw1vr9', 'title': 'Status'
+                                                },
+                                                {'tipo': 'people', 'value': [
+                                                        {'id': '72162409', 'kind': 'person'
+                                                        },
+                                                        {'id': '72162428', 'kind': 'person'
+                                                        }
+                                                    ], 'id': 'multiple_person_mkq7c26d', 'title': 'People'
+                                                },
+                                                {'tipo': 'dropdown', 'value': [
+                                                        {'label': 'RRHH', 'id': '1'
+                                                        },
+                                                        {'label': 'Contabilidad', 'id': '2'
+                                                        },
+                                                        {'label': 'Marketing', 'id': '3'
+                                                        },
+                                                        {'label': 'Almacen', 'id': '4'
+                                                        }
+                                                    ], 'id': 'dropdown_mkq7jk7v', 'title': 'Dropdown'
+                                                },
+                                                {'tipo': 'timeline', 'value': {'from': '2025-04-01', 'to': '2025-05-13'
+                                                    }, 'id': 'timerange_mkq7jnr3', 'title': 'Timeline'
+                                                },
+                                                {'tipo': 'link', 'value': {'url': 'https: //www.google.com/?hl=es', 'text': 'Google'}, 'id': 'link_mkq76xxs', 'title': 'Link'}, {'tipo': 'numbers', 'value': 5345, 'id': 'numeric_mkqqaxdp', 'title': 'Numbers'}, {'tipo': 'file', 'value': None, 'id': 'file_mkqq47p5', 'title': 'Files'}, {'tipo': 'formula', 'value': None, 'id': 'formula_mkqqaw2w', 'title': 'Formula'}, {'tipo': 'board_relation', 'value': None, 'id': 'board_relation_mkqq4f0g', 'title': 'Connect boards'}, {'tipo': 'status', 'value': 'High', 'id': 'color_mkqq7x4h', 'title': 'Priority'}, {'tipo': 'doc', 'value': None, 'id': 'doc_mkqqs1r6', 'title': 'monday Doc'}, {'tipo': 'status', 'value': 'Label 1', 'id': 'color_mkqq392d', 'title': 'Label'}, {'tipo': 'button', 'value': None, 'id': 'button_mkqqbzyh', 'title': 'Button'}, {'tipo': 'checkbox', 'value': {'checked': True}, 'id': 'boolean_mkqq9zdf', 'title': 'Check'}, {'tipo': 'phone', 'value': {'phone': '+628234324', 'countryShortName': 'ES'}, 'id': 'phone_mkqqe0v9', 'title': 'Phone'}, {'tipo': 'world_clock', 'value': None, 'id': 'timezone_mkqqp8hz', 'title': 'World clock'}, {'tipo': 'location', 'value': {'lat': 29.9772962, 'lng': 31.1324955, 'address': 'Giza Pyramid Complex'}, 'id': 'location_mkqqg7cy', 'title': 'Location'}, {'tipo': 'vote', 'value': None, 'id': 'votes_mkqqpw6q', 'title': 'Vote'}, {'tipo': 'color_picker', 'value': None, 'id': 'color_picker_mkqqhynr', 'title': 'Color picker'}, {'tipo': 'country', 'value': {'name': 'Albania', 'code': 'AL'}, 'id': 'country_mkqq5jsj', 'title': 'Country'}, {'tipo': 'dependency', 'value': {'linked_item_ids': [['1886374213', '1886374243', '1886374143', '1890607187']]}, 'id': 'dependency_mkqqezkt', 'title': 'Dependency'}, {'tipo': 'email', 'value': {'email': 'bivanov@cartagon.com', 'text': 'mi correo - bivanov@cartagon.com'}, 'id': 'email_mkqq3smm', 'title': 'Email'}, {'tipo': 'hour', 'value': {'hour': 12, 'minute': 54}, 'id': 'hour_mkqqq64t', 'title': 'Hour'}, {'tipo': 'item_id', 'value': None, 'id': 'pulse_id_mkqqrj5v', 'title': 'Item ID'}, {'tipo': 'last_updated', 'value': None, 'id': 'pulse_updated_mkqq5fza', 'title': 'Last updated'}, {'tipo': 'rating', 'value': {'rating': 3}, 'id': 'rating_mkqqbef0', 'title': 'Rating'}, {'tipo': 'tags', 'value': {'tag_ids': [5143872]}, 'id': 'tag_mkqqt1x', 'title': 'Tags'}, {'tipo': 'time_tracking', 'value': None, 'id': 'duration_mkqq1vps', 'title': 'Time tracking'}, {'tipo': 'board_relation', 'value': None, 'id': 'board_relation_mkqr9hga', 'title': 'Base'}, {'tipo': 'mirror', 'value': None, 'id': 'lookup_mkqrahx4', 'title': 'Mirror'}, {'tipo': 'long_text', 'value': None, 'id': 'long_text_mkqrn7xc', 'title': 'Long text'}]
